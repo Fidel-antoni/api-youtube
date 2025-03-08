@@ -1,7 +1,7 @@
         document.getElementById('registerForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Previene el envío del formulario
+            event.preventDefault(); // Previene el envío del formulario.
     
-            // Captura los datos del formulario
+            // Captura los datos del formulario.
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
     

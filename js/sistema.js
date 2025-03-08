@@ -1,3 +1,5 @@
+        //login
+        
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Previene el envío del formulario
     
