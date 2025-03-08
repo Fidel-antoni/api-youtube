@@ -166,6 +166,7 @@ document.getElementById("cancelAddVideoBtn").addEventListener("click", () => {
     document.getElementById("addVideoForm").style.display = "none";
 });
 
+
 // Guardar el nuevo video en la base de datos
 document.getElementById("saveVideoBtn").addEventListener("click", async () => {
     const title = document.getElementById("newVideoTitle").value;
