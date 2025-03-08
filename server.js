@@ -137,8 +137,6 @@ app.post('/saveVideo', (req, res) => {
     });
 });
 
-
-
 // Endpoint para obtener todos los videos
 app.get('/getVideos', (req, res) => {
     const sql = 'SELECT * FROM videos';
