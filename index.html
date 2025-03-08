@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Videos</title>
+    <link rel="stylesheet" href="css/index.css"> <!-- Ruta corregida -->
+</head>
+<body>
+    <header>
+        <div class="youtube">
+            <h1>Videos Play Free</h1>
+            <img src="img/descarga.jpg" alt=""> <!-- Ruta corregida -->
+            <div class="rango-temp"></div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar videos...">
+        <button id="buscarYoutube" type="submit">Buscar</button>
+    </div>
+
+    <!-- Botón para agregar nuevo video -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button id="addVideoBtn">Agregar Video</button>
+    </div>
+
+    <!-- Formulario para agregar nuevo video (oculto al inicio) -->
+    <div id="addVideoForm" style="display: none;">
+        <input type="text" id="newVideoTitle" placeholder="Título del video">
+        <textarea id="newVideoDescription" placeholder="Descripción del video"></textarea>
+        <input type="text" id="newVideoUrl" placeholder="URL del video de YouTube">
+        <button id="saveVideoBtn">Guardar</button>
+        <button id="cancelAddVideoBtn">Cancelar</button>
+    </div>
+
+    <!-- Botón de Cerrar Sesión centrado -->
+    <div class="logout-container" style="text-align: center; margin-top: 20px;">
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </div>
+    
+    <div class="box"></div>
+
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", function () {
+            alert("Has cerrado sesión.");
+            window.location.href = "views/sistema.html"; 
+        });
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
+<!--  -->

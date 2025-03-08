@@ -1,0 +1,208 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d2af7a, #d2700f);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d2700f;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header img {
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#searchInput {
+    width: 350px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #fffefe;
+    color: #000000;
+    outline: none;
+}
+
+#buscarYoutube {
+    padding: 12px 25px;
+    background: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+#buscarYoutube:hover {
+    background: #e84118;
+}
+
+/* Contenedor de videos */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 12px;
+}
+
+.video-info {
+    margin-top: 15px;
+}
+
+.video-info input,
+.video-info textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #292929;
+    color: #e0e0e0;
+    outline: none;
+}
+
+/* Botones */
+.editBtn, .deleteBtn, .cancelBtn {
+    margin-top: 12px;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    transition: background 0.3s;
+}
+
+.editBtn {
+    background: #2ecc71;
+}
+.deleteBtn {
+    background: #ff0015;
+}
+.cancelBtn {
+    background: #f39c12;
+}
+
+.editBtn:hover {
+    background: #27ae60;
+}
+.deleteBtn:hover {
+    background: #e84118;
+}
+.cancelBtn:hover {
+    background: #e67e22;
+}
+
+/* Mensajes de confirmación */
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    background: #292929;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Formulario de agregar video */
+#addVideoForm {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#addVideoForm input,
+#addVideoForm textarea {
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+}
+
+#saveVideoBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#saveVideoBtn:hover {
+    background-color: #388E3C;
+}
+
+#cancelAddVideoBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cancelAddVideoBtn:hover {
+    background-color: #D32F2F;
+}
+
+/* Botón de Cerrar Sesión */
+#logoutBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f;
+}
